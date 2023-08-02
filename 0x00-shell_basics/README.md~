@@ -1,0 +1,5 @@
+**  script man ** 
+ 0-crrent_working_directory  ______ Print absolute path name of the working directory . 
+ 1-listit ______ Display contents of current directory 
+ 2-bring_me_home ______ change work directory to home 
+ 
