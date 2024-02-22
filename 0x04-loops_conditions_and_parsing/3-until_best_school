@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 #display Bet School for 10times
 i=10
-until [ $i -eq 0 ];do
+until [ $i -eq 0 ]
+do
       echo 'Best School'
       i=$((i - 1))
 done
