@@ -4,6 +4,6 @@
 i=10
 while [ $i -gt 0 ]
 do
-    echo 'Best Shool'
-    let i=i-1
+    echo "Best Shool"
+    i=$((i - 1))
 done
