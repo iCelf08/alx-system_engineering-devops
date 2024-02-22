@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# displays Best School 10times
+K = 10
+for i in K; do echo 'Best School' ; done

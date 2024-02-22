@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#Bash script that displays Best School 10 times,after 9 Hi
+i=10
+while [ $i -gt 0 ]; do
+  if [ $i -eq 1 ]; then 
+    echo 'Hi'
+    echo 'Best School'
+  fi 
+  echo 'Best School'
+  i=$((i - 1))
+done

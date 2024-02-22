@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#display Best School 10times
+i=10
+while [ $i -ge 0 ] ;do
+	echo 'Best Shool'
+	i=$((i - 1))
+done
