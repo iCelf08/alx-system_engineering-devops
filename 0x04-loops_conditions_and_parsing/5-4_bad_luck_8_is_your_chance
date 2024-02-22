@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#4_bad_luck_8_is_your_chance
+
+l=0
+while [ $l -lt 10 ]
+do
+    if [ $l -eq 3 ]; then
+	echo "bad luck"
+    elif [ $l -eq 7 ]; then
+	echo "good luck"
+    else
+	echo "Best School"
+    fi
+    l=$((l + 1))
+done
