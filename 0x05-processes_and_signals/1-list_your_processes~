@@ -1,0 +1,4 @@
+#!/bin/usr/env bash
+#prints all processes hierarchy
+
+eval "ps aux"
