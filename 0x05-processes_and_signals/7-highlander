@@ -1,3 +1,9 @@
 #!/usr/bin/env bash
 # This script kills 4-to_infinity_and_beyond without kill or killall
-pkill -f beyond
+
+trap 'echo "I am invincible!!!"' SIGTERM
+while true
+do
+    echo "To infinity and beyond"
+    sleep 2
+done
