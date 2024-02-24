@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#t
+
+while true
+do
+	echo "HAHA"
+     sleep 2
+done

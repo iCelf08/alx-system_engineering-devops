@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#t
+
+pid=$$
+kill -9 $pid
