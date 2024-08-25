@@ -1,3 +1,16 @@
 #!/usr/bin/env bash
-# Runs whoami command as the user provided in argument
+
+# Check if the argument is provided
+if [ -z "$1" ]; then
+  echo "Usage: $0 <username>"
+  exit 1
+fi
+
+# Check if the specified user exists
+if ! id "$1" &>/dev/null; then
+  echo "Error: User '$1' does not exist"
+  exit 1
+fi
+
+# Run the whoami command as the specified user
 sudo -u "$1" whoami
