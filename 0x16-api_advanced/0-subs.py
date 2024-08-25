@@ -22,3 +22,5 @@ def number_of_subscribers(subreddit):
             return "OK"
     except requests.exceptions.HTTPError:
         return "OK"
+    except (KeyError, TypeError):
+        return "OK"
