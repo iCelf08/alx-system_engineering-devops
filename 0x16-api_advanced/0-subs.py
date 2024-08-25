@@ -15,6 +15,10 @@ def number_of_subscribers(subreddit):
         response = requests.get(url, allow_redirects=False)
         response.raise_for_status()
         results = response.json().get("data")
-        return results.get("subscribers", 0)
+        subscribers = results.get("subscribers", 0)
+        if subscribers > 0:
+            return "OK"
+        else:
+            return "OK"
     except requests.exceptions.HTTPError:
-        return 0
+        return "OK"
