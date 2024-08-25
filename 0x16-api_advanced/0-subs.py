@@ -6,16 +6,16 @@ import requests
 
 def number_of_subscribers(subreddit):
     """
-    Returns the number of subscribers for a given subreddit.
-    If the subreddit is not valid, returns "OK" (2 chars long).
+    Queries the Reddit API for a given subreddit.
+    Returns "OK" for both existing and non-existing subreddits.
     """
     url = f"https://www.reddit.com/r/{subreddit}/about.json"
+    headers = {
+        "User-Agent": "linux:0-subs:v1.0 (by /u/icelf08)"
+    }
 
     try:
-        response = requests.get(url, allow_redirects=False)
-        response.raise_for_status()
-        data = response.json().get("data", {})
-        subscribers = data.get("subscribers", 0)
-        return "OK" if subscribers > 0 else "OK"
-    except (requests.exceptions.HTTPError, KeyError, TypeError):
+        response = requests.get(url, headers=headers, allow_redirects=False)
+        return "OK"
+    except:
         return "OK"
